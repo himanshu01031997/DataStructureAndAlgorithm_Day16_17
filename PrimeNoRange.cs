@@ -10,9 +10,9 @@ namespace AlgoritmProblem
     {
        public void CheckPrime()
         {
-            int num, i, ctr, s1, s2;
+            int j, i, count, s1, s2;
 
-            Console.Write("Find the prime numbers within a range of numbers:\n");
+            Console.Write("Find the Prime numbers within a range of numbers:\n");
             Console.WriteLine("---------------------------------------------------");
             Console.Write("Input starting number of range: ");
             s1 = Convert.ToInt32(Console.ReadLine());
@@ -20,21 +20,21 @@ namespace AlgoritmProblem
             s2 = Convert.ToInt32(Console.ReadLine());
             Console.Write("The prime numbers between {0} and {1} are : \n", s1, s2);
 
-            for (num = s1; num <= s2; num++)
+            for (j = s1; j <= s2; j++)
             {
-                ctr = 0;
+                count = 0;
 
-                for (i = 2; i <= num / 2; i++)
+                for (i = 2; i <= j / 2; i++)
                 {
-                    if (num % i == 0)
+                    if (j % i == 0)
                     {
-                        ctr++;
+                        count++;
                         break;
                     }
                 }
 
-                if (ctr == 0 && num != 1)
-                    Console.Write("{0} ", num);
+                if (count == 0 && j != 1)
+                    Console.Write("{0} ", j);
             }
             Console.Write("\n");
         }
