@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("please enter your choice:\n1.Binary search\n");
+            Console.WriteLine("please enter your choice:\n1.Insertion sort\n");
             int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
             {
