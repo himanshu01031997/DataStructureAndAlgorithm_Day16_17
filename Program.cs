@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("please enter your choice:\n1.Insertion Sort\n2.Bubble Sort\n3.Anagram\n");
+            Console.WriteLine("please enter your choice:\n1.Insertion Sort\n2.Bubble Sort\n3.Anagram\n4.PrimeNoInRange\n");
             int choice = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("---------------------------------");
             switch (choice)
@@ -20,6 +20,10 @@
                 case 3:
                     Anagramcs anagram = new Anagramcs();
                     anagram.CheckAnagram();
+                    break;
+                case 4:
+                    PrimeNoRange check = new PrimeNoRange();
+                    check.CheckPrime();
                     break;
                     default:
                     break;
