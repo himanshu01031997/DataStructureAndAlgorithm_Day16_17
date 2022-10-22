@@ -12,7 +12,7 @@ namespace AlgoritmProblem
         {
             int[] arr = new int[5] { 23, 9, 12, 85, 5 };
             int n = 5, i, j, val, flag;
-            Console.WriteLine("insertion sort");
+            Console.WriteLine("Insertion sort");
             for (i = 0; i < n; i++)
             {
                 Console.WriteLine(arr[i]);
