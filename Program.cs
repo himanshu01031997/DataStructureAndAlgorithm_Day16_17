@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("please enter your choice:\n1.Insertion Sort\n2.Bubble Sort\n3.Anagram\n4.PrimeNoInRange\n");
+            Console.WriteLine("please enter your choice:\n1.Insertion Sort\n2.Bubble Sort\n3.Anagram\n4.PrimeNoInRange\n5.Permutation string");
             int choice = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("---------------------------------");
             switch (choice)
@@ -25,7 +25,13 @@
                     PrimeNoRange check = new PrimeNoRange();
                     check.CheckPrime();
                     break;
-                    default:
+                case 5:
+                    PermutationString permutationString = new PermutationString();
+                    permutationString.permute("abcd", 0, 3);
+                    break;
+                
+                    
+                default:
                     break;
             }
         }
